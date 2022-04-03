@@ -2,6 +2,11 @@
   "extends": "solhint:recommended",
   "rules": {
     "compiler-version": ["error", "^0.8.0"],
-    "func-visibility": ["warn", { "ignoreConstructors": true }]
+    "func-visibility": ["warn", { "ignoreConstructors": true }],
+    "quotes": ["off", "double"],
+    "reason-string": ["warn", { "maxLength": 256 }],
+    "not-rely-on-time": "off",
+    "var-name-mixedcase": "off",
+    "no-empty-blocks": "off"
   }
 }

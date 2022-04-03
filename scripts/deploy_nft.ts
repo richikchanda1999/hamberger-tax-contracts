@@ -14,8 +14,11 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
+
   const HambergerNFT = await ethers.getContractFactory("HambergerNFT");
-  const hambergerNFT = await HambergerNFT.deploy();
+  const hambergerNFT = await HambergerNFT.deploy(
+    "0xeD5B5b32110c3Ded02a07c8b8e97513FAfb883B6"
+  );
 
   await hambergerNFT.deployed();
 
